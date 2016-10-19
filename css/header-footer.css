@@ -1,0 +1,55 @@
+* { 
+	/*Normalize*/
+	border:0;
+	padding:0;
+	margin:0;
+	text-align: center;
+	font-family:"Open Sans",sans-serif;
+}
+
+header, footer {
+	font-family:"Open Sans",sans-serif;
+	background-color: black;
+	color: white;
+	display: block;
+	text-align: center;
+}
+a {
+	color: white;
+}
+.title {
+	font-family: 'Fredericka the Great', cursive;
+	color: white;
+	font-size: 48px;
+}
+
+footer a:hover {
+	color:#148d55;
+}
+
+
+header span {
+	padding:10px;
+	text-decoration: initial;
+	display:inline-block;
+}
+
+.navigation-item span{
+	border-bottom:5px solid black;
+}
+.navigation:hover .navigation-item {
+  color:grey;
+}
+.navigation-item:hover span {
+  color:white;
+  border-bottom:5px solid #148d55;
+}
+.navigation-item:hover {
+}
+
+.credits {
+	margin-bottom: 20px;
+}
+.social-icons > * {
+	margin:10px;
+}

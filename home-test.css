@@ -1,0 +1,37 @@
+
+.summary img {
+	width:100%;
+	position:relative;
+	top:-14vw;
+	margin:auto;
+}
+.summary {
+}
+
+.hero img{
+	width:100%;
+}
+.hero h1 {
+	position:relative;
+	top:-55vw;
+	color:white;
+	text-shadow: 1px 1px black;
+	height:0;
+	overflow:visible;
+}
+
+.embiggen {
+	font-family: 'Fredericka the Great', cursive;
+	font-size:36px;
+}
+
+.work {
+
+}
+
+li {
+	text-align: left;
+}
+ul {
+	
+}
