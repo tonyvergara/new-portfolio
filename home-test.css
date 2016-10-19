@@ -4,12 +4,14 @@
 	position:relative;
 	top:-14vw;
 	margin:auto;
+	min-width:900px;
 }
 .summary {
 }
 
-.hero img{
+.hero img, .contact img{
 	width:100%;
+	min-width:700px;
 }
 .hero h1 {
 	position:relative;
@@ -33,5 +35,31 @@ li {
 	text-align: left;
 }
 ul {
-	
+
+}
+.work-tile {
+	margin:10px;
+	height:calc(100% - 20px);
+	width:calc(100% - 20px);
+	max-height: 400px;
+	max-width:400px;
+	content:'';
+	overflow:hidden;
+	background-color:#183B31;
+}
+.work-tile img {
+	width:100%;
+}
+.case-text {
+	background-color: white;
+	position:relative;
+	top:-20px;
+}
+.contact-contents {
+	position:relative;
+	top:-45vw;
+	color:white;
+	text-shadow: 2px 2px black;
+	height:0;
+	overflow:visible;
 }
