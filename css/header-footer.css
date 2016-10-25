@@ -8,6 +8,7 @@
 }
 .wrapper {
 	overflow:hidden;
+	background-color: #e7e7e7;
 }
 .wrapper > * {
 	margin:auto;
@@ -19,6 +20,7 @@ header, footer {
 	color: white;
 	display: block;
 	text-align: center;
+	width:100%;
 }
 a {
 	color: white;
@@ -48,7 +50,7 @@ header span {
 }
 .navigation-item:hover span {
   color:white;
-  border-bottom:5px solid #148d55;
+  border-bottom:5px solid #62EEC4;
 }
 .navigation-item:hover {
 }
@@ -64,4 +66,25 @@ header span {
 }
 .social-icons i {
 	color:white;
+}
+
+
+/*
+mobile to desktop responsive css
+*/
+
+@media only screen and (min-width:450px) {
+	header > *, footer > * {
+		display:inline-block;
+		margin:auto;
+	}
+	header .title {
+		padding-right:15vw;
+	}
+}
+
+@media only screen and (min-width:750px) {
+	header .title {
+		padding-right: 25vw;
+	}
 }
