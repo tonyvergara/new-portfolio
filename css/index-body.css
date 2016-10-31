@@ -1,0 +1,183 @@
+* {
+	font-weight:300;
+}
+.summary {
+	width:100%;
+	position:relative;
+	top:-12vw;
+	/*left:calc((900px - 100vw)*-1/2);*/
+	margin:auto;
+	background-size:cover;
+}
+
+.hero img, .contact img{
+	width:100%;
+	min-width:700px;
+}
+.hero h1 {
+	position:relative;
+	top:-100vw;
+	color:white;
+	text-shadow: 2px 2px black;
+	height:0;
+	overflow:visible;
+	font-weight:300;
+}
+
+.embiggen {
+	font-family: 'Fredericka the Great', cursive;
+	font-size:36px;
+}
+
+.work {
+
+}
+
+li {
+	text-align: left;
+	color:white;
+}
+ul {
+	margin:auto;
+	list-style-type: none;
+	text-align:center;
+}
+.work-tile {
+	margin:10px;
+	height:calc(100vw - 20px);
+	width:calc(100vw - 20px);
+	max-height: 400px;
+	max-width:400px;
+	content:'';
+	overflow:hidden;
+	background-color:#183B31;
+	display:inline-block;
+}
+.work-tile img {
+	width:100%;
+}
+/*.work-tile:hover .work-tile-contents {
+	opacity:0.4;
+}*/
+.work-img {
+	transition: .5s;
+	filter: blur(0px);
+}
+.work-tile:hover .work-img {
+	transform: scale(1.2);
+	filter: blur(1px);
+	transition: .5s;
+}
+.case-text {
+	padding: 5px;
+	background-color: white;
+	position:relative;
+	top:-100px;
+	height:100px;
+}
+/*
+.summary-contents {
+	position:relative;
+	top:0;
+	display:flex;
+}
+.summary-contents > * {
+	padding:50px;
+	margin:auto;
+}
+*/
+.summary img {
+	max-width: 225px;
+	margin:auto;
+	padding-top:50px;
+}
+.contact {
+	background-image: url(../img/contact-bg.png);
+	background-position:center center;
+	background-repeat: no-repeat;
+	height:48vw;
+	min-height:400px;
+}
+.contact-contents {
+	position:relative;
+	top:-45vw;
+	color:white;
+	text-shadow: 2px 2px black;
+	height:0;
+	overflow:visible;
+}
+.contact-cta {
+	background-color: white;
+	color: #419F83;
+	padding: 10px;
+	text-shadow:none;
+	margin-top: 20vw;
+	display:inline-block;
+	font-weight:700;
+	border-radius:5px;
+	font-size:24px;
+}
+.contact-cta:hover {
+	background-color: black;
+	color: #62EEC4;
+	box-shadow: 2px 2px white;
+}
+.work.title {
+	color:#183B31;
+}
+.work-tile h3 {
+	font-weight:700;
+	font-size:16px;
+	color:#419F83;
+	letter-spacing: -0.25px;
+}
+
+.summary {
+	background-image:url(../img/home-about-bg.png);
+	overflow:visible;
+	background-position:center;
+	background-size:cover;
+	height:654px;
+	background-repeat: no-repeat;
+	display:inline-block;
+}
+
+li {
+	padding-top:5px;
+}
+.contact h3 {
+	color:white;
+	padding-top:75px;
+	text-shadow: 2px 2px 2px black;
+	font-size: 36px
+}
+
+.services i {
+	width: 80px;
+}
+/*colors, 419F83, 35826B, 62EEC4*/
+/*
+this is mobile to desktop responsive css
+*/
+
+@media only screen and (min-width:569px) {
+	.summary {
+		background-size: 100%;
+		height:73vw;
+		display:flex;
+		margin:auto;
+	}
+	.hero h1 {
+		top:-55vw;
+	}
+	.summary > * {
+		display:inline-block;
+		margin:auto;
+	}
+	li {
+		display:block;
+	}
+	.summary img {
+		max-width:300px;
+	}
+}
