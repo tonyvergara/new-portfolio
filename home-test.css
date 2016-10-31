@@ -87,8 +87,9 @@ ul {
 }
 */
 .summary img {
-	max-width: 300px;
+	max-width: 250px;
 	margin:auto;
+	padding-top:50px;
 }
 .contact {
 	background-image: url(img/contact-bg.png);
@@ -173,5 +174,8 @@ this is mobile to desktop responsive css
 	}
 	li {
 		display:block;
+	}
+	.summary img {
+		max-width:300px;
 	}
 }

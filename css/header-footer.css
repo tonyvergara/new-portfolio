@@ -81,10 +81,7 @@ mobile to desktop responsive css
 		display:inline-block;
 		margin:auto;
 	}
-	header .title {
-		padding-right:15vw;
-	}
-	
+
 	footer {
 		display:flex;
 	}
