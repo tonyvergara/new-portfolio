@@ -1,15 +1,13 @@
 * {
 	font-weight:300;
 }
-.summary-bg {
+.summary {
 	width:100%;
 	position:relative;
 	top:-10vw;
-	left:calc((900px - 100vw)*-1/2);
+	/*left:calc((900px - 100vw)*-1/2);*/
 	margin:auto;
-	min-width:900px;
-}
-.summary {
+	background-size:;
 }
 
 .hero img, .contact img{
@@ -20,7 +18,7 @@
 	position:relative;
 	top:-55vw;
 	color:white;
-	text-shadow: 1px 1px black;
+	text-shadow: 2px 2px black;
 	height:0;
 	overflow:visible;
 	font-weight:300;
@@ -40,9 +38,9 @@ li {
 	color:white;
 }
 ul {
-	max-width:80%;
 	margin:auto;
 	list-style-type: none;
+	text-align:center;
 }
 .work-tile {
 	margin:10px;
@@ -58,6 +56,18 @@ ul {
 .work-tile img {
 	width:100%;
 }
+/*.work-tile:hover .work-tile-contents {
+	opacity:0.4;
+}*/
+.work-img {
+	transition: .5s;
+	filter: blur(0px);
+}
+.work-tile:hover .work-img {
+	transform: scale(1.2);
+	filter: blur(1px);
+	transition: .5s;
+}
 .case-text {
 	padding: 5px;
 	background-color: white;
@@ -65,23 +75,27 @@ ul {
 	top:-100px;
 	height:100px;
 }
+/*
 .summary-contents {
 	position:relative;
 	top:0;
-	height:0;
-	overflow: visible;
+	display:flex;
 }
 .summary-contents > * {
 	padding:50px;
+	margin:auto;
 }
-
-.summary-contents img {
+*/
+.summary img {
 	max-width: 300px;
 	margin:auto;
 }
-.contact-bg {
-	position:relative;
-	left:calc((900px - 100vw)*-1/2);
+.contact {
+	background-image: url(img/contact-bg.png);
+	background-position:center center;
+	background-repeat: no-repeat;
+	height:48vw;
+	min-height:400px;
 }
 .contact-contents {
 	position:relative;
@@ -92,36 +106,72 @@ ul {
 	overflow:visible;
 }
 .contact-cta {
-	background-color: #62EEC4;
-	padding: 5px;
+	background-color: white;
+	color: #419F83;
+	padding: 10px;
 	text-shadow:none;
+	margin-top: 20vw;
+	display:inline-block;
+	font-weight:700;
+	border-radius:5px;
+	font-size:24px;
+}
+.contact-cta:hover {
+	background-color: black;
+	color: #62EEC4;
 	box-shadow: 2px 2px white;
 }
 .work.title {
 	color:#183B31;
 }
 .work-tile h3 {
-	font-family: "Fredericka the Great";
 	font-weight:700;
 	font-size:16px;
 	color:#419F83;
+	letter-spacing: -0.25px;
+}
+
+.summary {
+	background-image:url(img/home-about-bg.png);
+	overflow:visible;
+	background-position:center;
+	background-size:cover;
+	height:654px;
+	background-repeat: no-repeat;
+	display:inline-block;
+}
+
+li {
+	padding:5px;
+}
+.contact h3 {
+	color:white;
+	padding-top:75px;
+	text-shadow: 2px 2px 2px black;
+	font-size: 36px
+}
+
+.services i {
+	width: 80px;
 }
 /*colors, 419F83, 35826B, 62EEC4*/
 /*
 this is mobile to desktop responsive css
 */
 
-@media only screen and (min-width:450px) {
-	.summary-bg {
-		left:0;
+@media only screen and (min-width:569px) {
+	.summary {
+		background-size: 100%;
+		height:73vw;
+		display:flex;
+		margin:auto;
 	}
-	.summary-contents > * {
-		display:inline-flex;
+	
+	.summary > * {
+		display:inline-block;
+		margin:auto;
 	}
 	li {
 		display:block;
-	}
-	.contact-bg {
-		left:0;
 	}
 }

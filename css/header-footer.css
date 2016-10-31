@@ -31,6 +31,9 @@ a {
 	font-size: 48px;
 }
 
+footer a {
+	display:inline-block;
+}
 footer a:hover {
 	color:#148d55;
 }
@@ -80,6 +83,10 @@ mobile to desktop responsive css
 	}
 	header .title {
 		padding-right:15vw;
+	}
+	
+	footer {
+		display:flex;
 	}
 }
 
