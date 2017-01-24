@@ -1,0 +1,99 @@
+* {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-family:"Open Sans",sans-serif;
+	font-weight: 300;
+}
+.about-header {
+	padding:50px 0;
+	background-color: #183B31;
+	color:white;
+	display:flex;
+}
+
+.tony-pic, .tony-desc {
+	display:inline-block;
+	width: 45vw;
+	text-align: center;
+	margin:auto;
+}
+.tony-pic img {
+	width:250px;
+}
+
+
+.skill {
+	display:inline-block;
+	color:white;
+	padding: 5px;
+	border: 1px solid white;
+	border-radius: 10px;
+	margin: 10px;
+}
+.skill:hover {
+	color:yellow;
+	border: 1px solid yellow;
+}
+
+.domains>.research-icon:hover .skill-tags>.research{
+	color:lightblue;
+	border: 1px solid #7777ff;
+}
+.research-icon:hover {
+	color: #7777ff;
+}
+
+.skills-module>.domains>.design-icon:hover .skills-module>.skill-tags>.design{
+	color:lightblue;
+	border: 1px solid #ff7777;
+}
+.design-icon:hover {
+	color: #ff7777;
+}
+
+.domains>.strategy-icon:hover .skill-tags>.strategy{
+	color:yellow;
+	border: 1px solid yellow;
+}
+.strategy-icon:hover {
+	color: yellow;
+}
+.skills-module {
+	background-color:white;
+	padding-top: 20px;
+}
+.skill-tags {
+	background-color:black;
+	padding: 20px 50px;
+	margin-top: 40px;
+}
+.third {
+	min-width:30vw;
+	color:black;
+	display:inline-block;
+	text-align:center;
+	margin:auto;
+}
+.third > * {
+	padding: 10px;
+
+}
+
+.skill-tags>.research:hover {
+	color:#4444ff;
+	border:1px solid #4444ff;
+}
+.skill-tags>.design:hover {
+	color:#ff4444;
+	border:1px solid #ff4444;
+}
+.skill-tags>.strategy:hover {
+	color:yellow;
+	border:1px solid yellow;
+}
+
+.embiggen {
+	font-family:"Fredericka the Great";
+	font-size: 36pt;
+}

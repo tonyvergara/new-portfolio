@@ -71,6 +71,9 @@ header span {
 	color:white;
 }
 
+ header .title:hover {
+	text-shadow: 2px 2px #62EEC4;
+}
 
 /*
 mobile to desktop responsive css

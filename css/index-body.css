@@ -1,7 +1,7 @@
 * {
 	font-weight:300;
 }
-.summary {
+#summary {
 	width:100%;
 	position:relative;
 	top:-12vw;
@@ -53,20 +53,23 @@ ul {
 	background-color:#183B31;
 	display:inline-block;
 }
+.work-tile-contents {
+	opacity: 1;
+	transition: .5s ease-in-out;
+}
 .work-tile img {
 	width:100%;
 }
 /*.work-tile:hover .work-tile-contents {
 	opacity:0.4;
 }*/
-.work-img {
-	transition: .5s;
-	filter: blur(0px);
-}
-.work-tile:hover .work-img {
-	transform: scale(1.2);
-	filter: blur(1px);
-	transition: .5s;
+.work-tile:hover .work-tile-contents {
+	filter: grayscale(100%);
+	opacity: .15;
+	transition: .3s ease-in-out;
+	box-shadow: 2px 2px solid #62EEC4;
+	-webkit-backface-visibility: hidden;
+
 }
 .case-text {
 	padding: 5px;
@@ -76,17 +79,17 @@ ul {
 	height:100px;
 }
 /*
-.summary-contents {
+#summary-contents {
 	position:relative;
 	top:0;
 	display:flex;
 }
-.summary-contents > * {
+#summary-contents > * {
 	padding:50px;
 	margin:auto;
 }
 */
-.summary img {
+#summary img {
 	max-width: 225px;
 	margin:auto;
 	padding-top:50px;
@@ -96,7 +99,7 @@ ul {
 	background-position:center center;
 	background-repeat: no-repeat;
 	height:48vw;
-	min-height:400px;
+	min-height:500px;
 }
 .contact-contents {
 	position:relative;
@@ -107,8 +110,8 @@ ul {
 	overflow:visible;
 }
 .contact-cta {
-	background-color: white;
-	color: #419F83;
+	background-color: transparent;
+	color: white;
 	padding: 10px;
 	text-shadow:none;
 	margin-top: 20vw;
@@ -116,11 +119,13 @@ ul {
 	font-weight:700;
 	border-radius:5px;
 	font-size:24px;
+	border: 4px solid white;
 }
 .contact-cta:hover {
-	background-color: black;
-	color: #62EEC4;
-	box-shadow: 2px 2px white;
+	background-color: #62EEC4;
+	color: black;
+	border-color:#62EEC4;
+	box-shadow: 2px 2px 1px white;
 }
 .work.title {
 	color:#183B31;
@@ -132,7 +137,7 @@ ul {
 	letter-spacing: -0.25px;
 }
 
-.summary {
+#summary {
 	background-image:url(../img/home-about-bg.png);
 	overflow:visible;
 	background-position:center;
@@ -140,6 +145,9 @@ ul {
 	height:654px;
 	background-repeat: no-repeat;
 	display:inline-block;
+}
+.social-icons i:hover {
+	color: #62EEC4;
 }
 
 li {
@@ -161,7 +169,7 @@ this is mobile to desktop responsive css
 */
 
 @media only screen and (min-width:569px) {
-	.summary {
+	#summary {
 		background-size: 100%;
 		height:73vw;
 		display:flex;
@@ -170,14 +178,32 @@ this is mobile to desktop responsive css
 	.hero h1 {
 		top:-55vw;
 	}
-	.summary > * {
+	#summary > * {
 		display:inline-block;
 		margin:auto;
 	}
 	li {
 		display:block;
 	}
-	.summary img {
+	#summary img {
 		max-width:300px;
 	}
+}
+
+.go-to-case {
+	background-image: url('../img/go-on.png');
+	background-size: cover;
+}
+.coming-soon {
+	background-image: url('../img/coming-soon.png');
+	background-size: cover;
+}
+
+.contact-info {
+	color: white;
+	padding-top:75px;
+}
+
+p {
+	color: black;
 }
