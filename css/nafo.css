@@ -1,0 +1,12 @@
+.nafo {
+	background-image:url("../img/nafo-hero.jpg");
+	width:100vw;
+	background-position: 50% 75%;
+	background-size: cover;
+}
+.blh {
+	background-image:url("../img/blh-hero.jpg");
+	width:100vw;
+	background-position: 50% 85%;
+	background-size: cover;
+}

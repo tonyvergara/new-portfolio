@@ -1,0 +1,53 @@
+.personas {
+	display:inline-block;
+	margin: 20px 0;
+}
+.full-width-text {
+	width: 60vw;
+	max-width: 675px;
+	margin: auto;
+}
+
+.big-img {
+	max-width:375px;
+}
+img {
+	width: 100%;
+}
+p {
+	text-align: left;
+}
+li {
+	margin: 0 60px;
+}
+h3 {
+	margin: 12px 0;
+}
+.bg-out {
+	background-color: #183B31;
+	height: 15vw;
+}
+.bg-in {
+	background-color: #62EEC4;
+	padding: 20px auto;
+	height: 10vw;
+	width: 80%;
+	overflow: hidden;
+	margin: auto;
+}
+.usability {
+	width: 60%;
+}
+.cta-image {
+	width: 60%;
+}
+.half-width {
+	display:inline-flex;
+	width:49%;
+	color:black;
+}
+.half-width i {
+	color: black;
+	padding-right:5px;
+	width: 20px;
+}
